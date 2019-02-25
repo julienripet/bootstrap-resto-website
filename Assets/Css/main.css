@@ -32,13 +32,11 @@ body{
 
 @media only screen and (min-width: 1200px){
     #imageContainer{
-        width:100vw;
-        height: 100vh;
         background:repeat rgb(6, 58, 6);
         background-image: url(../Pictures/BGBigDesktop.jpeg);
         background-position: center; 
         background-size: 75vw;
-        background-attachment: local;
+        background-attachment: fixed;
 
     }
 }
@@ -48,8 +46,6 @@ body{
         background-image: url(../Pictures/BGDesktop.jpeg);
         background-position: center; 
         background-attachment: local;
-        width: 100vw;
-        height: 100vh;
 
     }
 }
@@ -59,9 +55,6 @@ body{
         background-image: url(../Pictures/BGDesktop.jpeg);
         background-position: center; 
         background-attachment: local;
-        width: 100vw;
-        height: 100vh;
-
     }
 }
 
@@ -69,19 +62,19 @@ body{
     #imageContainer {
         background-image: url(../Pictures/BGBigDesktop.jpeg);
         background-position: center; 
-    background-attachment: local;
-    width: 100vw;
-    height: 100vh;
+        background-attachment: local;
     }
 }
 
 main{
     background-color: rgb(6, 58, 6);
     /* width:75vw !important;  */
-    height: 60vh; 
+    height: 120vh; 
 }
 
 footer{
+    background-color: black;
+
     /* height: 20vh; */
     position: fixed;
     bottom: 0px;
