@@ -48,6 +48,28 @@ main{
     border-radius: 15px;
     
 }
+h1{
+    color: #053905;
+    font-family: 'Numans', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#S{
+    white-space: nowrap;
+    display: inline;
+    color:#305698;
+}
+#M{
+    white-space: nowrap;
+    display: inline;
+    color:#2DB72D;
+}
+
+
+
+h2{
+    font-size: 1.5rem;
+}
 
 footer{
 border-radius: 5px;
@@ -114,9 +136,14 @@ border-radius: 5px;
         background:repeat rgb(6, 58, 6);
         background-image: url(../Pictures/BGBigDesktop.jpeg);
         background-position: center; 
-        background-size: ;
+        background-size:80vw;
         background-attachment: fixed;
 
+    }
+
+    main{
+        background-image: url(../Pictures/BGMainBig.jpeg);
+        
     }
 }
 
@@ -127,6 +154,10 @@ border-radius: 5px;
         background-attachment: fixed;
         
     }
+
+    main{
+        background-image: url(../Pictures/BGMainBig.jpeg);
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -135,9 +166,16 @@ border-radius: 5px;
         background-position: center; 
         background-attachment: fixed;
     }
+    main{
+        background-image: url(../Pictures/BGMainBig.jpeg);
+    }
 }
 
 @media only screen and (max-width: 801px) {
+
+    main{
+        background-image: url(../Pictures/BGMainSmall.jpeg);
+    }
 
     #imageContainer {
         background-image: url(../Pictures/BGMobile.jpeg);
@@ -147,6 +185,9 @@ border-radius: 5px;
     }
 }
 @media only screen and (max-width: 576px) {
+    main{
+        background-image: url(../Pictures/BGMainSmall.jpeg);
+    }
     .bottom ul, .bottom p ,.bottom li{
         margin: 0 auto 0 auto !important;
 
