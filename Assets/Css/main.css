@@ -50,7 +50,8 @@ main{
 }
 
 footer{
-    background-color: black;
+border-radius: 5px;
+    background-color: rgba(4, 17, 2, 0.918);
     font-size: 0.9rem;
     position: fixed !important;
     bottom: 0px;
@@ -58,7 +59,7 @@ footer{
     
 }
 .bottom{
-    background-color: black;
+    /* background-color: black; */
 
     align-content: center;
     justify-content: center;
@@ -78,8 +79,27 @@ footer{
     /* margin: 0 0 0 18px !important; */
 
 }
+.socialLinks{
+    font-style: normal;
+    color:#245a24;
+    white-space: nowrap !important;
+    display: inline !important;
+}
+.socialLinks:hover{
+    font-style: normal;
+    color:#338333;
+    white-space: nowrap !important;
+    display: inline !important;
+}
 
+.socialIcons{
+    width:20px;
+    height: auto;
+    white-space: nowrap !important;
+
+}
 #social{
+
     display: flex;
     flex-direction: column;
     
