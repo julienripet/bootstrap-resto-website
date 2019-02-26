@@ -29,6 +29,10 @@ body{
 .dropdown-item:hover{
     background-color: rgba(20, 197, 20, 0.897) !important;
 }
+#imageContainer{
+    width: 100vw;
+    height: 100vh;
+}
 
 @media only screen and (min-width: 1200px){
     #imageContainer{
@@ -69,14 +73,13 @@ body{
 main{
     background-color: rgb(6, 58, 6);
     /* width:75vw !important;  */
-    height: 120vh; 
+    /* height: 120vh;  */
 }
 
 footer{
     background-color: black;
-
-    /* height: 20vh; */
-    position: fixed;
+    font-size: 0.9rem;
+    position: fixed !important;
     bottom: 0px;
     color:#439543;
     
@@ -88,9 +91,14 @@ footer{
     justify-content: center;
     place-content: center;
 }
-.bottom ul, .bottom p{
+.bottom ul, .bottom p ,.bottom li{
     align-content: center;
     justify-content: center;
     place-content: center;
-    margin: 0 auto;
+    margin: 10px auto;
+}
+
+.bottom li{
+    list-style-type: none;
+    margin:0 0 0 18px;
 }
