@@ -22,6 +22,13 @@ body{
 
 }
 
+#navbarSupportedContent{
+    justify-content: flex-end !important;
+    margin-right: 20px;
+}
+#navbarSupportedContent ul{
+    margin: 0 !important;
+}
 .dropdown-menu{
     color: rgb(43, 95, 43);
     background-color: rgba(14, 88, 14, 0.644) !important;
@@ -32,42 +39,6 @@ body{
 #imageContainer{
     width: 100vw;
     height: 100vh;
-}
-
-@media only screen and (min-width: 1200px){
-    #imageContainer{
-        background:repeat rgb(6, 58, 6);
-        background-image: url(../Pictures/BGBigDesktop.jpeg);
-        background-position: center; 
-        background-size: 75vw;
-        background-attachment: fixed;
-
-    }
-}
-
-@media only screen and (max-width: 1200px){
-    #imageContainer {
-        background-image: url(../Pictures/BGDesktop.jpeg);
-        background-position: center; 
-        background-attachment: local;
-
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    #imageContainer {
-        background-image: url(../Pictures/BGDesktop.jpeg);
-        background-position: center; 
-        background-attachment: local;
-    }
-}
-
-@media only screen and (max-width: 798px) {
-    #imageContainer {
-        background-image: url(../Pictures/BGBigDesktop.jpeg);
-        background-position: center; 
-        background-attachment: local;
-    }
 }
 
 main{
@@ -92,13 +63,73 @@ footer{
     place-content: center;
 }
 .bottom ul, .bottom p ,.bottom li{
+    display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     place-content: center;
-    margin: 10px auto;
+    /* margin: 0 auto 0 auto !important; */
+
 }
 
+.bottom ul{
+    /* margin: 0 0 0 18px !important; */
+
+}
+
+#social{
+    display: flex;
+    flex-direction: column;
+    
+}
 .bottom li{
     list-style-type: none;
     margin:0 0 0 18px;
 }
+
+@media only screen and (min-width: 1200px){
+    #imageContainer{
+        background:repeat rgb(6, 58, 6);
+        background-image: url(../Pictures/BGBigDesktop.jpeg);
+        background-position: center; 
+        background-size: 75vw;
+        background-attachment: fixed;
+
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #imageContainer {
+        background-image: url(../Pictures/BGDesktop.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
+
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #imageContainer {
+        background-image: url(../Pictures/BGDesktop.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+
+    #imageContainer {
+        background-image: url(../Pictures/BGMobile.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
+        background-size: 130vh;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .bottom ul, .bottom p ,.bottom li{
+        margin: 0 auto 0 auto !important;
+
+    }
+    .bottom ul{
+        margin: 0 0 0 18px !important;
+    
+    }
