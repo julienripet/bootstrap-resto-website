@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
 *{
     margin: 0;
     padding: 0;
@@ -42,9 +43,10 @@ body{
 }
 
 main{
-    background-color: rgb(6, 58, 6);
-    /* width:75vw !important;  */
-    /* height: 120vh;  */
+    background-color: rgb(144, 204, 144);
+    margin-top:20px;
+    border-radius: 15px;
+    
 }
 
 footer{
@@ -92,7 +94,7 @@ footer{
         background:repeat rgb(6, 58, 6);
         background-image: url(../Pictures/BGBigDesktop.jpeg);
         background-position: center; 
-        background-size: 75vw;
+        background-size: ;
         background-attachment: fixed;
 
     }
@@ -103,7 +105,7 @@ footer{
         background-image: url(../Pictures/BGDesktop.jpeg);
         background-position: center; 
         background-attachment: fixed;
-
+        
     }
 }
 
