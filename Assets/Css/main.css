@@ -48,9 +48,11 @@ header{
     background-color: rgba(20, 197, 20, 0.897) !important;
 }
 #imageContainer{
+    top:0;
     width: 100vw;
     height: 100vh;
     position: fixed !important;
+   
 }
 
 main{
@@ -58,6 +60,10 @@ main{
     margin-top:20px;
     border-radius: 15px;
     top:15vh;
+    
+}
+#containerText{
+    padding:0 20px;
 }
 h1{
     padding: 5px;
@@ -82,14 +88,15 @@ h1{
     color:#2DB72D;
 }
 
-
-
 h2{
     font-size: 1.5rem;
 }
-
+aside picture img{
+    width: 100%;
+    border-radius: 10px;
+}
 footer{
-border-radius: 5px;
+    border-radius: 5px;
     background-color: rgba(4, 17, 2, 0.918);
     font-size: 0.9rem;
     position: fixed !important;
@@ -98,8 +105,6 @@ border-radius: 5px;
     
 }
 .bottom{
-    /* background-color: black; */
-
     align-content: center;
     justify-content: center;
     place-content: center;
@@ -110,14 +115,8 @@ border-radius: 5px;
     align-content: center;
     justify-content: center;
     place-content: center;
-    /* margin: 0 auto 0 auto !important; */
-
 }
 
-.bottom ul{
-    /* margin: 0 0 0 18px !important; */
-
-}
 .socialLinks{
     font-style: normal;
     color:#245a24;
@@ -160,6 +159,8 @@ border-radius: 5px;
 
     main{
         background-image: url(../Pictures/BGMainBig.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
         
     }
 }
@@ -185,6 +186,8 @@ border-radius: 5px;
     }
     main{
         background-image: url(../Pictures/BGMainBig.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
     }
 }
 
@@ -192,6 +195,8 @@ border-radius: 5px;
 
     main{
         background-image: url(../Pictures/BGMainSmall.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
     }
 
     #imageContainer {
@@ -204,6 +209,8 @@ border-radius: 5px;
 @media only screen and (max-width: 576px) {
     main{
         background-image: url(../Pictures/BGMainSmall.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
     }
     .bottom ul, .bottom p ,.bottom li{
         margin: 0 auto 0 auto !important;
