@@ -52,7 +52,6 @@ header{
     width: 100vw;
     height: 100vh;
     position: fixed !important;
-   
 }
 
 main{
@@ -101,7 +100,7 @@ footer{
     font-size: 0.9rem;
     position: fixed !important;
     bottom: 0px;
-    color:#439543;
+    color:#64df64;
     
 }
 .bottom{
@@ -119,13 +118,13 @@ footer{
 
 .socialLinks{
     font-style: normal;
-    color:#245a24;
+    color:#0c9b0c;
     white-space: nowrap !important;
     display: inline !important;
 }
 .socialLinks:hover{
     font-style: normal;
-    color:#338333;
+    color:#1ffa1f;
     white-space: nowrap !important;
     display: inline !important;
 }
