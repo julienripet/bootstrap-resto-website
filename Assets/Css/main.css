@@ -82,6 +82,24 @@ h1{
 
 }
 
+.menuContainer{
+    background-blend-mode: overlay;
+    background-image: url(../Pictures/wildtextures_regular-seamless-granite-texture.webp);
+}
+
+.menuListing{
+    opacity:initial;
+}
+
+.menuListing li:nth-of-type(odd){
+    background-color: rgba(0, 0, 0, 0.185);
+}
+.prices{
+    margin: auto;
+    float: right;
+    text-align: end;
+}
+
 #title{
     border-radius: 5px;
     background-color: #8bdf8b42;
@@ -91,7 +109,9 @@ h1{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #title:hover{
-    padding: 5px;
+    border-radius: 5px;
+    background-color: #8bdf8b42;
+    /* padding: 5px; */
     filter: invert(100%);
 }
 #S{
