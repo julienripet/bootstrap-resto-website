@@ -167,7 +167,7 @@ footer{
 @media only screen and (min-width: 1200px){
     #imageContainer{
         background:repeat rgb(6, 58, 6);
-        background-image: url(../Pictures/BGBigDesktop.jpeg);
+        background-image: url(../Pictures/BGBigDesktop.webp);
         background-position: center; 
         background-size:80vw;
         background-attachment: fixed;
@@ -175,7 +175,7 @@ footer{
     }
 
     main{
-        background-image: url(../Pictures/BGMainBig.jpeg);
+        background-image: url(../Pictures/BGMainBig.webp);
         background-position: center; 
         background-attachment: fixed;
         
@@ -184,25 +184,25 @@ footer{
 
 @media only screen and (max-width: 1200px){
     #imageContainer {
-        background-image: url(../Pictures/BGDesktop.jpeg);
+        background-image: url(../Pictures/BGDesktop.webp);
         background-position: center; 
         background-attachment: fixed;
         
     }
 
     main{
-        background-image: url(../Pictures/BGMainBig.jpeg);
+        background-image: url(../Pictures/BGMainBig.webp);
     }
 }
 
 @media only screen and (max-width: 992px) {
     #imageContainer {
-        background-image: url(../Pictures/BGDesktop.jpeg);
+        background-image: url(../Pictures/BGDesktop.webp);
         background-position: center; 
         background-attachment: fixed;
     }
     main{
-        background-image: url(../Pictures/BGMainBig.jpeg);
+        background-image: url(../Pictures/BGMainBig.webp);
         background-position: center; 
         background-attachment: fixed;
     }
@@ -211,13 +211,13 @@ footer{
 @media only screen and (max-width: 801px) {
 
     main{
-        background-image: url(../Pictures/BGMainBig.jpeg);
+        background-image: url(../Pictures/BGMainBig.webp);
         background-position: center; 
         background-attachment: fixed;
     }
 
     #imageContainer {
-        background-image: url(../Pictures/BGMobile.jpeg);
+        background-image: url(../Pictures/BGMobile.webp);
         background-position: center; 
         background-attachment: fixed;
         background-size: 130vh;
@@ -225,7 +225,7 @@ footer{
 }
 @media only screen and (max-width: 576px) {
     main{
-        background-image: url(../Pictures/BGMainBig.jpeg);
+        background-image: url(../Pictures/BGMainBig.webp);
         background-position: center; 
         background-attachment: fixed;
     }
