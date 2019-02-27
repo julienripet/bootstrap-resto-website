@@ -180,7 +180,7 @@ footer{
     align-content: center;
     justify-content: center;
     place-content: center;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .socialLinks{
@@ -260,10 +260,18 @@ li{
         background-position: center; 
         background-attachment: fixed;
     }
+    .bottom ul, .bottom p ,.bottom li{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        place-content: center;
+        margin-bottom: 0px;
+    }
 }
 
 @media only screen and (max-width: 801px) {
-
+    
     main{
         background-image: url(../Pictures/BGMainBig.webp);
         background-position: center; 
