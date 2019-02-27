@@ -5,9 +5,19 @@
     box-sizing: border-box;
 }
 body{
+  
     width: 100vw;
     height: 100vh;
 }
+
+header{
+    display: block;
+    position: fixed !important;
+    z-index: 1;
+    top:0px;
+
+}
+
 #logo{
     background-color: white;
     border-radius: 5%;
@@ -38,19 +48,56 @@ body{
     background-color: rgba(20, 197, 20, 0.897) !important;
 }
 #imageContainer{
+    top:0;
     width: 100vw;
     height: 100vh;
+    position: fixed !important;
+   
 }
 
 main{
     background-color: rgb(144, 204, 144);
     margin-top:20px;
     border-radius: 15px;
+    top:15vh;
     
 }
+#containerText{
+    padding:0 20px;
+}
+h1{
+    padding: 5px;
 
+}
+#title{
+    /* border-radius: 5px;
+    background-color: #245a24bd; */
+    color: #053905;
+    font-family: 'Numans', sans-serif;
+    font-size: 3.5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#S{
+    white-space: nowrap;
+    display: inline;
+    color:#305698;
+}
+#M{
+    white-space: nowrap;
+    display: inline;
+    color:#2DB72D;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+aside picture img{
+    width: 100%;
+    border-radius: 10px;
+}
 footer{
-    background-color: black;
+    border-radius: 5px;
+    background-color: rgba(4, 17, 2, 0.918);
     font-size: 0.9rem;
     position: fixed !important;
     bottom: 0px;
@@ -58,8 +105,6 @@ footer{
     
 }
 .bottom{
-    background-color: black;
-
     align-content: center;
     justify-content: center;
     place-content: center;
@@ -70,16 +115,29 @@ footer{
     align-content: center;
     justify-content: center;
     place-content: center;
-    /* margin: 0 auto 0 auto !important; */
-
 }
 
-.bottom ul{
-    /* margin: 0 0 0 18px !important; */
-
+.socialLinks{
+    font-style: normal;
+    color:#245a24;
+    white-space: nowrap !important;
+    display: inline !important;
+}
+.socialLinks:hover{
+    font-style: normal;
+    color:#338333;
+    white-space: nowrap !important;
+    display: inline !important;
 }
 
+.socialIcons{
+    width:20px;
+    height: auto;
+    white-space: nowrap !important;
+
+}
 #social{
+
     display: flex;
     flex-direction: column;
     
@@ -94,9 +152,16 @@ footer{
         background:repeat rgb(6, 58, 6);
         background-image: url(../Pictures/BGBigDesktop.jpeg);
         background-position: center; 
-        background-size: ;
+        background-size:80vw;
         background-attachment: fixed;
 
+    }
+
+    main{
+        background-image: url(../Pictures/BGMainBig.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
+        
     }
 }
 
@@ -107,6 +172,10 @@ footer{
         background-attachment: fixed;
         
     }
+
+    main{
+        background-image: url(../Pictures/BGMainBig.jpeg);
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -115,9 +184,20 @@ footer{
         background-position: center; 
         background-attachment: fixed;
     }
+    main{
+        background-image: url(../Pictures/BGMainBig.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
+    }
 }
 
 @media only screen and (max-width: 801px) {
+
+    main{
+        background-image: url(../Pictures/BGMainBig.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
+    }
 
     #imageContainer {
         background-image: url(../Pictures/BGMobile.jpeg);
@@ -127,6 +207,18 @@ footer{
     }
 }
 @media only screen and (max-width: 576px) {
+    main{
+        background-image: url(../Pictures/BGMainBig.jpeg);
+        background-position: center; 
+        background-attachment: fixed;
+    }
+    h1{padding: 0px;}
+    #title{
+        color: #053905;
+        font-family: 'Numans', sans-serif;
+        font-size: 2.5rem;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
     .bottom ul, .bottom p ,.bottom li{
         margin: 0 auto 0 auto !important;
 
