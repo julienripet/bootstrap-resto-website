@@ -5,9 +5,19 @@
     box-sizing: border-box;
 }
 body{
+  
     width: 100vw;
     height: 100vh;
 }
+
+header{
+    display: block;
+    position: fixed !important;
+    z-index: 1;
+    top:0px;
+
+}
+
 #logo{
     background-color: white;
     border-radius: 5%;
@@ -40,18 +50,25 @@ body{
 #imageContainer{
     width: 100vw;
     height: 100vh;
+    position: fixed !important;
 }
 
 main{
     background-color: rgb(144, 204, 144);
     margin-top:20px;
     border-radius: 15px;
-    
+    top:15vh;
 }
 h1{
+    padding: 5px;
+
+}
+#title{
+    /* border-radius: 5px;
+    background-color: #245a24bd; */
     color: #053905;
     font-family: 'Numans', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #S{
