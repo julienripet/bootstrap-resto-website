@@ -81,14 +81,42 @@ h1{
     margin: 5px;
 
 }
+#photoContainer{
+    border-radius: 5px 25px;
+    background-color: #aaaaaa;
+    padding: 20px;
+
+}
+
+#photoContainer picture{
+    width: 100%;
+    height: auto;
+    background-color: #aaaaaa;
+    padding: 20px;
+    
+}
+#photoContainer picture img{
+    width: 100%;
+    height: auto;
+    background-color: #aaaaaa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+}
+
+#photoContainer picture img:hover{
+    width: 120%;
+    height: auto;
+    background-color: #858585;
+
+}
 
 .menuContainer{
     background-blend-mode: overlay;
     background-image: url(../Pictures/wildtextures_regular-seamless-granite-texture.webp);
-}
-
-.menuListing{
-    opacity:initial;
+    /* This texture is discusting and should not be used in any real-life work*/
 }
 
 .menuListing li:nth-of-type(odd){
