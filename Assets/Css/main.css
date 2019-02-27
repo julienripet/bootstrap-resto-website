@@ -27,6 +27,18 @@ header{
     height: auto;
 }
 
+#logo:hover{
+    filter: invert(100%);
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    background-color: white;
+    border-radius: 5%;
+    width: 5vw;
+    min-width: 50px;
+    max-width: 200px;
+    height: auto;
+
+}
+
 .navbar-dark{
     background-color: rgba(14, 88, 14, 0.616);
     color: rgb(43, 95, 43) !important;
@@ -66,15 +78,21 @@ main{
 }
 h1{
     padding: 5px;
+    margin: 5px;
 
 }
+
 #title{
-    /* border-radius: 5px;
-    background-color: #245a24bd; */
+    border-radius: 5px;
+    background-color: #8bdf8b42;
     color: #053905;
     font-family: 'Numans', sans-serif;
     font-size: 3.5rem;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#title:hover{
+    padding: 5px;
+    filter: invert(100%);
 }
 #S{
     white-space: nowrap;
@@ -226,3 +244,22 @@ footer{
         margin: 0 0 0 18px !important;
     
     }
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+  }
