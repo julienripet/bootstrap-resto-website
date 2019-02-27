@@ -180,6 +180,7 @@ footer{
     align-content: center;
     justify-content: center;
     place-content: center;
+    margin-bottom: 0px;
 }
 
 .socialLinks{
@@ -202,7 +203,7 @@ footer{
 
 }
 #social{
-
+    margin-top:10px;
     display: flex;
     flex-direction: column;
     
