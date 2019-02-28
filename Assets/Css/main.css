@@ -71,6 +71,12 @@ header{
     position: fixed !important;
 }
 
+.listeDeroulante{
+    background-color: rgba(78, 161, 255, 0.753) !important;
+}
+.listeDeroulante li a{
+    color:rgb(37, 255, 37) !important;
+}
 main{
     background-color: rgb(144, 204, 144);
     margin-top:20px;
@@ -212,6 +218,9 @@ h3{
     font-display: auto;
 
 
+}
+textarea,.inputText{
+    width:100%;
 }
 aside picture img{
     width: 100%;

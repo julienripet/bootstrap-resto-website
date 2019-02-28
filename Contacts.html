@@ -52,9 +52,26 @@
             <div id="containerText">
                 <h1><nobr id="title"><p id="S">S</p>kogs<p id="M">M</p>at </nobr></h1>
                 <div class="jumbotron row">
-                    <label for="name" class="col-12 col-md-6 col-lg-4">Nom :<input type="text" name="name"/></label>
-                    <label for="firstName" class="col-12 col-md-6 col-lg-4">Prénom :<input type="text" name="firstName"/></label>
-                    <label for="email" class="col-12 col-md-6 col-lg-4"> Email :<input type="email" name="email"/></label>
+                    <label for="name" class="col-12 col-md-6 col-lg-4">Nom :<input type="text" class="inputText" name="name"/></label>
+                    <label for="firstName" class="col-12 col-md-6 col-lg-4">Prénom :<input type="text" class="inputText" name="firstName"/></label>
+                    <label for="email" class="col-12 col-md-6 col-lg-4"> Email :<input type="email" class="inputText" name="email"/></label>
+                    <div class="dropdown col-12 col-md-4">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Dropdown
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu listeDeroulante" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                    <label for="comments" class="col-12 col-md-8 ">Commentaires :<textarea></textarea></label>
+                    <button type="button" class="btn btn-info">
+                        <span class="glyphicon-print"></span> Send
+                    </button>
                 </div>
             </div>
 
