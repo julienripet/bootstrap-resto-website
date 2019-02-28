@@ -33,16 +33,24 @@ window.onload = function(){
     
     console.log(restaurant)
 
-    if(restaurant != null && restaurant != undefined){
+    if(restaurant != null && restaurant != undefined && restaurant.length>0){
         let today = new Date();
+        const weekday = new Array(7);
+            weekday[0]="Lundi";
+            weekday[1]="Mardi";
+            weekday[2]="Mercredi";
+            weekday[3]="Jeudi";
+            weekday[4]="Vendredi";
+            weekday[5]="Samedi";
+            weekday[6]="Dimanche";
         for(i=0;i<=2;i++){
             let open = document.getElementsByClassName("isOpen")[i];
                 if(checkHoraire(today)){
-                    open.textContent = "We are open"
+                    open.textContent = "Nous sommes le "+ weekday[today.getDay()] + " à " + today.getHours() + " heure, le restaurant est donc ouvert."
                     console.log("open")
                 } else{
                     console.log("close")
-                    open.textContent = "We are not open"
+                    open.textContent = "Nous sommes le " + weekday[today.getDay()] + " à " + today.getHours() + " heure, le restaurant est donc fermé."
                 }
         }
     }
