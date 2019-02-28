@@ -81,9 +81,14 @@ h1{
     margin: 5px;
 
 }
+
+.resto{
+    color:black;
+}
+
 #photoContainer{
     border-radius: 5px 25px;
-    background-color: #aaaaaa;
+    background-color: #c2c2c2;
     padding: 20px;
 
 }
@@ -91,31 +96,28 @@ h1{
 #photoContainer picture{
     width: 100%;
     height: auto;
-    background-color: #aaaaaa;
-    padding: 20px;
+    background-color: #c2c2c2;
+    padding-right: 40px;
     
 }
 #photoContainer picture img{
     width: 100%;
     height: auto;
-    background-color: #aaaaaa;
+    background-color: #c2c2c2;
     display:flex;
     justify-content:center;
     align-items:center;
-
-
+    margin: 20px 10px;
 }
 
 #photoContainer picture img:hover{
     width: 110%;
     height: auto;
-    background-color: #858585;
+    background-color: #c2c2c2;
     position: relative;
     top:-5%;
     left:-5%;
     z-index: 2;
-
-
 }
 
 .menuContainer{
@@ -156,6 +158,31 @@ h1{
     white-space: nowrap;
     display: inline;
     color:#2DB72D;
+}
+
+.shadowBox{
+    position: fixed;
+    top:0px;left:0px;bottom: 0px;right: 0px;
+    background-color: #00000093;
+    z-index: 100;
+}
+
+.popUp{
+    border:solid #5f5f5f 2px ;
+    border-radius: 5px;
+    position: relative;
+    margin:auto;
+    top:40%;
+    background-color: #f0f0f0;
+    width: 300px;
+    padding: 10px;
+}
+
+.confirm{
+    margin:5px;
+    padding:5px;
+    background-color: green;
+    border-radius: 10px;
 }
 
 h2{
@@ -234,8 +261,9 @@ li{
     }
 
     main{
-        background-image: url(../Pictures/BGMainBig.webp);
+        background-image: url(../Pictures/treeTextureSmall.webp);
         background-position: center; 
+        background-size: 50%;
         background-attachment: fixed;
         
     }
