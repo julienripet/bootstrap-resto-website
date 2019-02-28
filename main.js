@@ -1,20 +1,61 @@
+console.log("page starts")
 window.onload = function(){
+    console.log("window load")
+
     let main = document.getElementsByTagName("body")[0]
     let shadowBox = document.getElementsByClassName("shadowBox")[0]
-    let popUp = document.createElement("div")
-    let askName = document.createElement("p")
-    let confirm = document.createElement("p")
+    let restaurant = document.getElementsByClassName("resto")
     let enterName = document.createElement("input")
-    let welcomeMessage = document.createElement("h2")
-    let description = document.getElementById("description")
-    //this label is ony there to please lighthouse//
-    let label = document.createElement("label")
 
     //Credits to  Ahmed EL Bir, fucntion found on https://dzone.com/articles/python-class-attributes-vs-instance-attributes//
     function jsUcfirst(string){
         return string.charAt(0).toUpperCase() + string.slice(1);
     }   
+
+    function checkHoraire(today){
+        if (today.getDay() != 1 && today.getDay()!= 2){
+            if(today.getHours() < 1 || today.getHours() > 16){
+                return true
+            } else if(today.getDay() == 1 ){
+                if(today.getHours() < 1){
+                    return true
+                }
+                else {if (today.getHours()>16){
+                    return true
+                } else{
+                    return false
+                }
+            }
+
+        }
+        }
+    }
+    
+    console.log(restaurant)
+
+    if(restaurant != null && restaurant != undefined){
+        let today = new Date();
+        for(i=0;i<=2;i++){
+            let open = document.getElementsByClassName("isOpen")[i];
+                if(checkHoraire(today)){
+                    open.textContent = "We are open"
+                    console.log("open")
+                } else{
+                    console.log("close")
+                    open.textContent = "We are not open"
+                }
+        }
+    }
+
     if(shadowBox){
+        let popUp = document.createElement("div")
+        let askName = document.createElement("p")
+        let confirm = document.createElement("p")
+        let welcomeMessage = document.createElement("h2")
+        let description = document.getElementById("description")
+        //this label is only there to please lighthouse//
+        let label = document.createElement("label")
+
         shadowBox.className="shadowBox"
         popUp.className="popUp"
         askName.className="askName"

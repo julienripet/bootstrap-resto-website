@@ -82,8 +82,14 @@ h1{
 
 }
 
+.singleRestoContainer{
+    padding: 0 50px 0 10px;
+    /* margin-right: 10px; */
+    margin:auto;
+}
 .resto{
     color:black;
+    margin:20px;
 }
 
 #photoContainer{
