@@ -7,6 +7,8 @@ window.onload = function(){
     let enterName = document.createElement("input")
     let welcomeMessage = document.createElement("h2")
     let description = document.getElementById("description")
+    //this label is ony there to please lighthouse//
+    let label = document.createElement("label")
 
     //Credits to  Ahmed EL Bir, fucntion found on https://dzone.com/articles/python-class-attributes-vs-instance-attributes//
     function jsUcfirst(string){
@@ -20,12 +22,16 @@ window.onload = function(){
         confirm.className="confirm"
         confirm.textContent="Confirmer!"
         enterName.type="text"
-        enterName.autofocus=true
+        enterName.id="enterName"
+        enterName.name = "enterName"
         enterName.className="name"
+        label.for="enterName"
+        label.textContent="Your name here"
 
         main.appendChild(shadowBox)
         shadowBox.appendChild(popUp)
         popUp.appendChild(askName)
+        popUp.appendChild(label)
         popUp.appendChild(enterName)
         popUp.appendChild(confirm)
 
@@ -60,4 +66,5 @@ window.onload = function(){
             }
         })
         confirm.addEventListener("click",clearShadowBox)}
+        enterName.focus();
     }
