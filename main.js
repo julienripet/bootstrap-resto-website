@@ -25,8 +25,9 @@ window.onload = function(){
         enterName.id="enterName"
         enterName.name = "enterName"
         enterName.className="name"
-        label.for="enterName"
+        label.htmlFor="enterName"
         label.textContent="Your name here"
+        console.log(label)
 
         main.appendChild(shadowBox)
         shadowBox.appendChild(popUp)
