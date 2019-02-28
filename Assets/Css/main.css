@@ -107,9 +107,14 @@ h1{
 }
 
 #photoContainer picture img:hover{
-    width: 120%;
+    width: 110%;
     height: auto;
     background-color: #858585;
+    position: relative;
+    top:-5%;
+    left:-5%;
+    z-index: 2;
+
 
 }
 
