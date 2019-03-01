@@ -1,0 +1,15 @@
+{
+    "short_name": "SM",
+    "name": "SkogsMat",
+    "icons": [
+      {
+        "src": "./Assets/Pictures/SkogsMat_Logo.ico",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/index.html/?source=pwa",
+    "background_color": "#0e580e",
+    "display": "standalone",
+    "theme_color": "#1ba91b"
+  }
