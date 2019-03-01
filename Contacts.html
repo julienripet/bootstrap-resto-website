@@ -4,7 +4,7 @@
         <meta name="description" content="Main page for the fictive restaurant chain SkogsMat"/>
         <link href="https://fonts.googleapis.com/css?family=Numans" rel="stylesheet"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-        <meta charset="utf-8"/>
+        <meta charset="utf-16"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <title>SkogsMat</title>
         <link rel='shortcut icon' type='image/x-icon' href="./Assets/Pictures/SkogsMat_Logo.ico" />
@@ -52,11 +52,12 @@
             <div id="containerText">
                 <h1><nobr id="title"><p id="S">S</p>kogs<p id="M">M</p>at </nobr></h1>
                 <div class="jumbotron row">
+                    <h2 class="col-12">Leave a comment</h2>
                     <label for="name" class="col-12 col-md-6 col-lg-4">Nom :<input type="text" class="inputText" name="name"/></label>
                     <label for="firstName" class="col-12 col-md-6 col-lg-4">Prénom :<input type="text" class="inputText" name="firstName"/></label>
                     <label for="email" class="col-12 col-md-6 col-lg-4"> Email :<input type="email" class="inputText" name="email"/></label>
                     <div class="dropdown col-12 col-md-4">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Dropdown
                             <span class="caret"></span>
                         </button>
@@ -67,9 +68,9 @@
                         </ul>
                     </div>
                     <label for="comments" class="col-12 col-md-8 ">Commentaires :<textarea></textarea></label>
-                    <span class="input-group-btn">
-                        <button type="button" class="btn input-group-btn btn-info">
-                            send
+                    <span class="input-group-btn col-12">
+                        <button type="button" class="btn input-group-btn btn-info myButton">
+                            <p>Send<i class="fas fa-share-square"></i></p> <!-- Tried to get glyphicon to work best I could, They wouldn't show up. Used font-awesome icon instead.-->                 
                         </button>
                     </span>
                 </div>

@@ -72,7 +72,7 @@ header{
 }
 
 .listeDeroulante{
-    background-color: rgba(78, 161, 255, 0.753) !important;
+    background-color: rgb(54, 123, 202) !important;
 }
 .listeDeroulante li a{
     color:rgb(37, 255, 37) !important;
@@ -92,7 +92,10 @@ h1{
     margin: 5px;
 
 }
-
+.glyphicon-send{
+    content:"\20ac";
+    width:10px !important;
+}
 .singleRestoContainer{
     padding: 0 50px 0 10px;
     /* margin-right: 10px; */
@@ -273,6 +276,17 @@ footer{
     display: flex;
     flex-direction: column;
     
+}
+
+.myButton{
+    margin: auto
+}
+
+.myButton i{
+    margin: 10px;
+}
+.myButton p{
+    margin:0 !important;
 }
 
 li{
